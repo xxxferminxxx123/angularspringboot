@@ -1,0 +1,19 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center"> Registro Empleado</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre:</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="empleado.name" name="name"/>
+        </div>
+        <div class="form-group">
+            <label>Lastname:</label>
+            <input type="text" class="form-control" id="lastname" [(ngModel)]="empleado.lastname" name="lastname"/>
+        </div>
+        <div class="form-group">
+            <label>DNI:</label>
+            <input type="text" class="form-control" id="dni" [(ngModel)]="empleado.dni" name="dni"/>
+        </div>
+        <button class="btn btn-success">Registrar Empleado</button>
+    </form>
+
+</div>
